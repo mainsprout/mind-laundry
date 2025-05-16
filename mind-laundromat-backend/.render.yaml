@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mind-laundry-backend
+    runtime: java
+    buildCommand: "./gradlew build"
+    startCommand: "java -jar build/libs/mind-laundry-0.0.1-SNAPSHOT.jar"
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
